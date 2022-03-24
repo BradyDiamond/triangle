@@ -1,0 +1,10 @@
+#Equilateral {
+  display: none;
+}
+#Isosceles {
+  display: none;
+}
+#Scalene {
+  display: none;
+  color: rgb(223, 23, 23);
+}
