@@ -1,13 +1,21 @@
-jQuery(document).ready(function() {
-  jQuery("h1").click(function() {
-    alert("This is a heading.");
-  });
+// BUSINESS LOGIC
 
-  jQuery("p").click(function() {
-    alert("This is a paragraph.");
-  });
+function fullName(firstName, lastName) {
+  return firstName + lastName;
+}
 
-  jQuery("img").click(function() {
-    alert("This is an image.");
+// UI LOGIC 
+
+$(document).ready(function() {
+  $("form#name").submit(function(event) {
+    event.preventDefault();
+    const firstVal = $("#val1").val();
+    const secondVal = $("#val2").val();
+    const thirdVal = $("#val3").val();
+
+    const result = (firstVal + secondVal + LastVal);
+    const receiptText = " Thank you for your Purchase!"
+    $("#output").text(result + " - " + flavor.toUpperCase() + " " + receiptText);
+    $("#output").show();
   });
 });
